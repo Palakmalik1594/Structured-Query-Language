@@ -1,0 +1,1 @@
+select E1.name AS Employee from Employee E1 JOIN Employee E2 ON E1.managerId=E2.id where E1.salary>E2.salary;
