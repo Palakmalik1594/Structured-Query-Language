@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+select ActorDirector.actor_id,ActorDirector.director_id from ActorDirector group by ActorDirector.actor_id,ActorDirector.director_id having count(ActorDirector.director_id)>=3;
