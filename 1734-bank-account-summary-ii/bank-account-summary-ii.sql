@@ -1,2 +1,2 @@
 # Write your MySQL query statement below
-select Users.name as NAME,sum(Transactions.amount) as BALANCE from Users join Transactions on Users.account=Transactions.account group by Transactions.account having sum(Transactions.amount)>10000;
+select Users.name as NAME,sum(Transactions.amount) as BALANCE from Users right join Transactions on Users.account=Transactions.account group by Transactions.account having sum(Transactions.amount)>10000;
